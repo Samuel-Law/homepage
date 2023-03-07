@@ -1,0 +1,56 @@
+.bussiness {
+  margin: 30px 20%;
+  .title {
+    margin: 30px 0;
+    font-size: 28px;
+    padding: 10px 0 20px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100px;
+      height: 3px;
+      background-color: #ff6d00;
+      position: absolute;
+      left: calc(50% - 50px);
+      bottom: -1px;
+    }
+  }
+
+  .card {
+    padding: 20px;
+    box-shadow: 2px 0px 9px 1px #ddd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    .info {
+      background-color: #1d50af;
+      text-align: left;
+      padding: 40px;
+      color: #fff;
+      line-height: 2;
+      flex-basis: 48%;
+      .label {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .msg {
+        font-size: 14px;
+        display: flex;
+        .msg-label {
+          width: 80px;
+          text-align: right;
+          margin-right: 10px;
+        }
+      }
+    }
+    .map {
+      width: auto;
+      height: auto;
+      flex-basis: 48%;
+    }
+  }
+}

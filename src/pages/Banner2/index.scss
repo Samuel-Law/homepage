@@ -1,0 +1,35 @@
+.banner2 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  // background-color: #132f61;
+  background-size: 100%;
+  align-items: center;
+  line-height: 1.4;
+  .info {
+    flex-basis: 40%;
+    color: #fff;
+    font-size: 30px;
+
+    line-height: 1.5;
+    .title {
+      color: #ff6d00;
+    }
+    .desc {
+      font-size: 20px;
+    }
+  }
+  .image-container {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    .image-outer {
+      margin: 10px;
+    }
+    .img {
+      height: 200px;
+      width: 250px;
+      border: 1px solid #ff6d00;
+    }
+  }
+}

@@ -1,10 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { config as AmapReactConfig } from "@amap/amap-react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+AmapReactConfig.version = "2.0"; // 默认2.0，这里可以不修改
+AmapReactConfig.key = "9d4a00ad55358410967c76794b311345";
+AmapReactConfig.plugins = [];
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />

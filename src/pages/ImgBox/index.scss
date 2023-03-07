@@ -1,0 +1,34 @@
+.imgBox {
+  border: 1px solid #e1e0e0;
+  margin: 80px 15%;
+  height: auto;
+  overflow: hidden;
+  .title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    // font-weight: bold;
+    background-color: #f7f7f7;
+    text-align: left;
+    .title-icon {
+      margin: 0 6px;
+    }
+  }
+  .img-container {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: flex-start;
+    .img {
+      width: 400px;
+      height: 300px;
+    }
+  }
+  .img-outer {
+    margin: 0 20px;
+  }
+  .images.rowup {
+    -webkit-animation: 10s rowup linear infinite normal;
+    animation: 10s rowup linear infinite normal;
+    position: relative;
+  }
+}

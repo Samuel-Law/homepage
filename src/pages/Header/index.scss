@@ -1,0 +1,47 @@
+.header-banner {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15%;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  text-align: left;
+  box-shadow: 2px 0px 9px 1px #ddd;
+}
+.header {
+  display: flex;
+  flex-direction: revert;
+  padding: 0 15%;
+  height: 130px;
+  align-items: center;
+  .title {
+    flex-basis: 70%;
+    text-align: center;
+    font-size: 32px;
+    text-align: left;
+    .text {
+      color: rgb(30, 80, 174);
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    .desc {
+      font-size: 14px;
+      color: #666666;
+    }
+  }
+  .phone {
+    text-align: right;
+    display: flex;
+    .phone-icon {
+      margin-right: 10px;
+    }
+    .phone-desc {
+      font-size: 14px;
+      color: #666666;
+      text-align: left;
+    }
+    .phone-number {
+      font-size: 22px;
+      color: rgb(33, 33, 33);
+    }
+  }
+}

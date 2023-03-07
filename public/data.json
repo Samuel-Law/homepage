@@ -1,20 +1,3 @@
- "animation": "fadeInDown" // 向下淡入
- "animation": "fadeInLeft" // 向左淡入
- "animation": "fadeInRight" // 向右淡入
- "animation": "fadeInUp" // 向上淡入
-
-
-
-type: "carousel"  // 轮播图
-type: "imgBox"    // 图片框
-type: "banner"    // banner横条单图  
-type: "banner2"   // banner横条多图
-type: "example"   // 示例
-type: "about"     // 关于我们
-type: "bussiness" // 企业信息
-type: "bigImage"  // 大图
-
-示例：
 {
   "header": {
     "title": "珠海市佳创兴精密机械有限公司",
@@ -35,7 +18,7 @@ type: "bigImage"  // 大图
     {
       "type": "imgBox",
       "title": "加工环境",
-      "animation": "fadeInU",
+      "animation": "fadeInUp",
       "images": [
         "/images/carousel_1.png",
         "/images/carousel_1.png",
@@ -44,11 +27,13 @@ type: "bigImage"  // 大图
     },
     {
       "type": "bigImage",
+      "animation": "bounceInRight",
       "url": "/images/description.jpg"
     },
     {
       "type": "banner2",
       "title": "XX市XX区",
+      "animation": "fadeInLeft",
       "text": "数据系统 恒温烤制",
       "desc": "数据系统 恒温烤制",
       "images": [
@@ -98,12 +83,14 @@ type: "bigImage"  // 大图
     {
       "type": "banner",
       "title": "XX市XX区",
+      "animation": "fadeInRight",
       "text": "数据系统 恒温烤制",
-      "images": ""
+      "images": "/images/carousel_1.png"
     },
     {
       "type": "bussiness",
       "title": "企业名片",
+      "animation": "bounceInLeft",
       "label": "珠海市佳创兴精密机械有限公司",
       "content": [
         {
