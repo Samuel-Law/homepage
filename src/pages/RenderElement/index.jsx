@@ -3,17 +3,17 @@ import Carousel from "../Carousel/index";
 import ImgBox from "../ImgBox/index";
 import Banner from "../Banner/index";
 import Banner2 from "../Banner2/index";
+import Banner3 from "../Banner3/index";
 import Example from "../Example/index";
 import About from "../About/index";
 import BigImage from "../BigImage/index";
 import Bussiness from "../Bussiness/index";
-import "./animate.min.css";
+import "./animate.scss";
 import "./index.scss";
 import { WOW } from "wowjs";
 
 const RenderElements = (props) => {
   const ref = useRef();
-  let observer = null;
   const { data } = props;
   const { animation = "fadeInDown" } = data;
 
@@ -23,6 +23,7 @@ const RenderElements = (props) => {
       imgBox: <ImgBox key={item.type} data={item} />,
       banner: <Banner key={item.type} data={item} />,
       banner2: <Banner2 key={item.type} data={item} />,
+      banner3: <Banner3 key={item.type} data={item} />,
       example: <Example key={item.type} data={item} />,
       about: <About key={item.type} data={item} />,
       bussiness: <Bussiness key={item.type} data={item} />,
@@ -46,15 +47,8 @@ const RenderElements = (props) => {
   };
 
   useEffect(() => {
-    console.log(WOW);
-    new WOW().init();
-
-    if (animation) {
-      //   observerElement();
-    }
-    return () => {
-      observer?.disconnect();
-    };
+    const wow = new WOW({ live: false });
+    wow.init();
   }, []);
 
   return <>{renderElement(data)}</>;

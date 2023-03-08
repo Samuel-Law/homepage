@@ -31,14 +31,12 @@
       "url": "/images/description.jpg"
     },
     {
-      "type": "banner2",
+      "type": "banner3",
       "title": "XX市XX区",
       "animation": "fadeInLeft",
       "text": "数据系统 恒温烤制",
       "desc": "数据系统 恒温烤制",
       "images": [
-        "/images/carousel_1.png",
-        "/images/carousel_1.png",
         "/images/carousel_1.png"
       ]
     },
