@@ -4,7 +4,6 @@
     "desc": "公司主营：食品机械生产、来料加工、非标零件加工、不锈钢搅龙",
     "phone": "000-000-000"
   },
-
   "showList": [
     {
       "type": "carousel",
@@ -19,6 +18,7 @@
       "type": "imgBox",
       "title": "加工环境",
       "animation": "fadeInUp",
+      "roll": true,
       "images": [
         "/images/carousel_1.png",
         "/images/carousel_1.png",
@@ -26,9 +26,33 @@
       ]
     },
     {
+      "type": "bussinessDesc"
+    },
+    {
       "type": "bigImage",
       "animation": "bounceInRight",
       "url": "/images/description.jpg"
+    },
+    {
+      "type": "banner2",
+      "title": "XX市XX区",
+      "animation": "fadeInLeft",
+      "text": "数据系统 恒温烤制",
+      "desc": "数据系统 恒温烤制",
+      "images": [
+        {
+          "url": "/images/carousel_1.png",
+          "text": "希尔顿酒店购买烙馍机"
+        },
+        {
+          "url": "/images/carousel_1.png",
+          "text": ""
+        },
+        {
+          "url": "/images/carousel_1.png",
+          "text": "希尔顿酒店购买烙馍机"
+        }
+      ]
     },
     {
       "type": "banner3",
@@ -37,7 +61,18 @@
       "text": "数据系统 恒温烤制",
       "desc": "数据系统 恒温烤制",
       "images": [
-        "/images/carousel_1.png"
+        {
+          "url": "/images/carousel_1.png",
+          "text": "希尔顿酒店购买烙馍机"
+        },
+        {
+          "url": "/images/carousel_1.png",
+          "text": ""
+        },
+        {
+          "url": "/images/carousel_1.png",
+          "text": "希尔顿酒店购买烙馍机"
+        }
       ]
     },
     {
@@ -61,10 +96,22 @@
       "type": "example",
       "title": "客户案例",
       "images": [
-        { "url": "/images/carousel_1.png", "text": "希尔顿酒店购买烙馍机" },
-        { "url": "/images/carousel_1.png", "text": "希尔顿酒店购买烙馍机" },
-        { "url": "/images/carousel_1.png", "text": "希尔顿酒店购买烙馍机" },
-        { "url": "/images/carousel_1.png", "text": "希尔顿酒店购买烙馍机" }
+        {
+          "url": "/images/carousel_1.png",
+          "text": "希尔顿酒店购买烙馍机"
+        },
+        {
+          "url": "/images/carousel_1.png",
+          "text": "希尔顿酒店购买烙馍机"
+        },
+        {
+          "url": "/images/carousel_1.png",
+          "text": "希尔顿酒店购买烙馍机"
+        },
+        {
+          "url": "/images/carousel_1.png",
+          "text": "希尔顿酒店购买烙馍机"
+        }
       ]
     },
     {

@@ -1,0 +1,31 @@
+.bussiness-desc {
+  height: auto;
+  padding: 30px 18%;
+  font-size: 20px;
+  font-weight: bold;
+  .desc-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .desc-img {
+      width: 60px;
+      margin-right: 10px;
+    }
+  }
+  .desc-content p {
+    text-align: left;
+    white-space: pre-line;
+    word-break: break-word;
+    text-indent: 2em;
+    margin-bottom: 0.2em;
+  }
+  .big {
+    font-size: 24px;
+  }
+  .line {
+    text-decoration: underline;
+  }
+}

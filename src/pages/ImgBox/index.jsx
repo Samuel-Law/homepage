@@ -59,7 +59,7 @@ const ImgBox = (props) => {
         <UnorderedListOutlined className="title-icon" />
         {data.title}
       </div>
-      <div className="images rowup">
+      <div className={`images ${data.roll ? "rowup" : ""}`}>
         {data?.images?.length > 0 && (
           <div className="img-container">{renderImages()}</div>
         )}

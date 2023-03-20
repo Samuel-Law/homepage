@@ -15,9 +15,10 @@ const Banner3 = (props) => {
       </div>
       {data.images?.length > 0 && (
         <div className="image-container">
-          {data.images?.map((url) => (
-            <div key={url} className="image-outer">
-              <Image className="img" src={url} preview={true} />
+          {data.images?.map((item) => (
+            <div key={item.url} className="image-outer">
+              <Image className="img" src={item.url} preview={true} />
+              <div className="img-msg">{item.text}</div>
             </div>
           ))}
         </div>

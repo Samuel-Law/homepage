@@ -8,6 +8,7 @@ import Example from "../Example/index";
 import About from "../About/index";
 import BigImage from "../BigImage/index";
 import Bussiness from "../Bussiness/index";
+import BussinessDesc from "../BussinessDesc/index";
 import "./animate.scss";
 import "./index.scss";
 import { WOW } from "wowjs";
@@ -27,6 +28,7 @@ const RenderElements = (props) => {
       example: <Example key={item.type} data={item} />,
       about: <About key={item.type} data={item} />,
       bussiness: <Bussiness key={item.type} data={item} />,
+      bussinessDesc: <BussinessDesc key={item.type} data={item} />,
       bigImage: <BigImage key={item.type} data={item} />,
     };
     const element = (
