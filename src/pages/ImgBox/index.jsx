@@ -43,14 +43,18 @@ const ImgBox = (props) => {
         </div>
       ) : null
     );
-    // 动画偏移补全
-    const num = Math.ceil(8 / length);
-    const arr = [];
-    for (let i = 0; i < num; i++) {
-      arr.push(element);
+    if (data.roll) {
+      // 动画偏移补全
+      const num = Math.ceil(8 / length);
+      const arr = [];
+      for (let i = 0; i < num; i++) {
+        arr.push(element);
+      }
+      addKeyFrames("-" + 440 * num + "px");
+      return arr;
+    } else {
+      return element;
     }
-    addKeyFrames("-" + 440 * num + "px");
-    return arr;
   };
 
   return (
@@ -59,7 +63,7 @@ const ImgBox = (props) => {
         <UnorderedListOutlined className="title-icon" />
         {data.title}
       </div>
-      <div className={`images ${data.roll ? "rowup" : ""}`}>
+      <div className={`images ${data.roll ? "rowup" : "scrollbar"}`}>
         {data?.images?.length > 0 && (
           <div className="img-container">{renderImages()}</div>
         )}

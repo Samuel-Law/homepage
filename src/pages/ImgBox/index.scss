@@ -1,6 +1,6 @@
 .imgBox {
   border: 1px solid #e1e0e0;
-  margin: 50px 15%;
+  margin: 50px 10%;
   height: auto;
   overflow: hidden;
   .title {
@@ -30,5 +30,13 @@
     -webkit-animation: 10s rowup linear infinite normal;
     animation: 10s rowup linear infinite normal;
     position: relative;
+  }
+  .images.scrollbar {
+    // height: 380px;
+    // overflow: hidden;
+    .img-container {
+      overflow-x: auto;
+      justify-content: space-between;
+    }
   }
 }
