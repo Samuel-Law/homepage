@@ -37,8 +37,7 @@
       "type": "banner2",
       "title": "XX市XX区",
       "animation": "fadeInLeft",
-      "text": "数据系统 恒温烤制",
-      "desc": "数据系统 恒温烤制",
+      "scroll": true,
       "images": [
         {
           "url": "/images/carousel_1.png",

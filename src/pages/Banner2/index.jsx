@@ -14,7 +14,7 @@ const Banner2 = (props) => {
         <div className="desc">{data.desc}</div>
       </div>
       {data.images?.length > 0 && (
-        <div className="image-container">
+        <div className={`image-container ${data.scroll ? "scroll" : ""}`}>
           {data.images?.map((item) => (
             <div key={item.url} className="image-outer">
               <Image className="img" src={item.url} preview={true} />
